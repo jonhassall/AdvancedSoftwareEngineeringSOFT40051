@@ -84,7 +84,7 @@ int main()
 	cout << *account_pointer << "\n";
 	cout << joint_account << "\n";
 
-
+	//Dynamic allocation
 	int* myIptr;
 	myIptr = new int[150];
 
@@ -100,6 +100,45 @@ int main()
 
 	cout << myIptr[0] << "\n" << myIptr[1] << "\n" << myIptr[2] << "\n";
 	cout << &myIptr[0] << "\n" << &myIptr[1] << "\n" << &myIptr[2] << "\n";
+	
+	//Pointer maths
+	//myIptr/array name is a pointer to the first entry
+	//Adding 2 skips to the second element
+	int* p = myIptr;
+	cout << *p + 2;
+	
 	delete myIptr;
 	myIptr = 0;
+
+
+	//These do the same thing
+	int table1[10];
+	int* const table2 = new int[10];
+
+
+	//Dynamic memory allocation for char
+	char textline[80]; //Store name temporarily
+	char* names[5]; //Array of 5 char* (pointers to char)
+
+	for (int i = 0; i < 5; i++)
+	{
+		cout << "Enter text " << i <<":\n";
+		cin >> textline;
+		names[i] = new char[strlen(textline) + 1];
+		if (names[i] == 0)
+		{
+			cerr << "\nMemory allocation error\n";
+		}
+		else
+		{
+			//strcpy(names[i], textline);
+			strcpy_s(names[i], strlen(textline) + 1, textline); //Secure string copy, requires explicit length of string
+		}
+	}
+
+	for (int i = 0; i < 5; i++)
+	{
+		cout << i << ": " << names[i] << "\n";
+	}
+	
 }
