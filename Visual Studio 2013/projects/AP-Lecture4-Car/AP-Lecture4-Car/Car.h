@@ -32,9 +32,9 @@ public:
 
 	double drive(double distance);
 
-	void changeOwner(char* owner);
+	void changeOwner(char owner[]); //Note that char owner[] is syntactic sugar for char* owner
 
-	void setMake(char* make);
+	void setMake(char make[]); //Note that char make[] is syntactic sugar for char* make
 
 	void setYear(int year);
 

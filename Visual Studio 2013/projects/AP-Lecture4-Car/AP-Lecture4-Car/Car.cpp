@@ -107,6 +107,13 @@ double Car::getRange()
 //Get distance actually travelled, stopping if empty
 double Car::drive(double distance)
 {
+	//Check if distance is valid
+	if (distance <= 0)
+	{
+		cerr << "Error with distance given.\n";
+		return 0;
+	}
+
 	//Calculate how many miles are possible with current petrol
 	double milesRange = getRange();
 
@@ -127,12 +134,12 @@ double Car::drive(double distance)
 	return distance;
 }
 
-void Car::changeOwner(char* owner)
+void Car::changeOwner(char owner[])
 {
 	Car::owner = owner;
 }
 
-void Car::setMake(char* make)
+void Car::setMake(char make[])
 {
 	Car::make = make;
 }
