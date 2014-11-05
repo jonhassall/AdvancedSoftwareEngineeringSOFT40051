@@ -1,15 +1,24 @@
-//Implementation - Car.cpp
+// File: main.cpp
+// Version: V1.0
+// Date: 31-10-14
+// Name: Jonathan Hassall
+// Lecture 4 - Car
+// Implementation - Car.cpp
+
 #include <iostream>
 #include <iomanip>
 #include "Car.h"
+#include <fstream>
+
 using namespace std;
 
 Car::Car()
 {
 	cout << "Constructor Car() called" << "\n";
+	Car::showGraphic();
 }
 
-Car::Car(char * make, int year, double petrol, double tankSize, double mpg, char * owner)
+Car::Car(char make[], int year, double petrol, double tankSize, double mpg, char owner[])
 {
 	cout << "Constructor Car(params) called" << "\n";
 	Car::setMake(make);
@@ -18,18 +27,41 @@ Car::Car(char * make, int year, double petrol, double tankSize, double mpg, char
 	Car::setTankSize(tankSize);
 	Car::setMpg(mpg);
 	Car::changeOwner(owner);
+	Car::showGraphic();
+}
+
+//Show an ASCII graphic from a text file
+void Car::showGraphic()
+{
+	ifstream dataIn;
+	dataIn.open("CarASCII.txt");
+	if (!dataIn)
+	{
+		//Don't show an error as this isn't critical
+	}
+	else
+	{
+		char textLine[128];
+		//dataIn.getline(textLine, sizeof(textLine), '\n');
+		while (!dataIn.eof())
+		{
+			dataIn.getline(textLine, sizeof(textLine), '\n');
+			cout << textLine << "\n";
+		}
+	}
 }
 
 void Car::display()
 {
-	cout << "\nCar information: " << "Make: " << make << " Year: " << year << " Petrol: " << petrol << " Tank size: " << tankSize << " MPG: " << mpg << " Owner: " << owner << " Range: " << getRange() << " miles\n";
+	cout << "\nCar information\n" << left << setw(12) << "Make: " << make << "\n" << setw(12) << "Year: " << year << "\n"
+		<< setw(12) << "Owner: " << owner << "\n" << setw(12) << "Petrol: " << petrol << "\n" << setw(12) << "Tank size: " << tankSize << "\n"
+		<< setw(12) << "MPG: " << mpg << "\n" 
+		<< setw(12) << "Range: " << getRange() << " miles\n";
 }
 
+//Pass number of gallons as a parameter and return gallons actually input before tank is full
 double Car::fillPetrol(double gallons)
 {
-	//Pass number of gallons as a parameter and return gallons actually 
-	//input (before full)
-
 	//Check if tank size is valid
 	if (Car::tankSize <= 0)
 	{
@@ -51,9 +83,8 @@ double Car::fillPetrol(double gallons)
 	}
 
 	//Fill tank with input
-	if (petrol + gallons >= tankSize)
+	if (petrol + gallons >= tankSize) //Overfill or full
 	{
-		//Overfill or full
 		double difference = tankSize - petrol;
 		petrol = tankSize;
 		Car::full();
@@ -63,30 +94,37 @@ double Car::fillPetrol(double gallons)
 	//Normal topping up tank
 	double difference = gallons;
 	petrol = petrol + gallons;
-
 	return difference;
 }
 
+//Get maximum range of car with current fuel level
 double Car::getRange()
 {
 	double milesRange = petrol * mpg;
 	return milesRange;
 }
 
+//Get distance actually travelled, stopping if empty
 double Car::drive(double distance)
 {
 	//Calculate how many miles are possible with current petrol
 	double milesRange = getRange();
-	cout << "Current fuel range: " << milesRange;
 
 	//If distance is greater than possible miles,
-	//Return distance, and empty tank
-	//Execute empty()
+	//Return distance travelled (maximum range), and empty tank
+	if (distance >= milesRange)
+	{
+		petrol = 0;
+		Car::empty();
+		return milesRange;
+	}
 
 	//Otherwise, calculate how much petrol distance will use, subtract it from petrol
 	//And return distance
-	double horsemeat = 123.123;
-	return horsemeat;
+	double petrolToUse = distance / mpg;
+	petrol = petrol - petrolToUse;
+
+	return distance;
 }
 
 void Car::changeOwner(char* owner)
@@ -121,10 +159,10 @@ void Car::setMpg(double mpg)
 
 void Car::full()
 {
-	cout << "\nPetrol tank is full!\n";
+	cout << "\nAlert: Petrol tank is full!\n";
 }
 
 void Car::empty()
 {
-	cout << "\nPetrol tank is empty!\n";
+	cout << "\nAlert: Petrol tank is empty!\n";
 }

@@ -1,4 +1,10 @@
-//Definition - Car.h
+// File: main.cpp
+// Version: V1.0
+// Date: 31-10-14
+// Name: Jonathan Hassall
+// Lecture 4 - Car
+
+// Definition - Car.h
 
 class Car
 {
@@ -13,6 +19,7 @@ private:
 
 	void empty();
 	void full();
+	void showGraphic();
 
 public:
 	Car();
@@ -37,5 +44,5 @@ public:
 
 	void setMpg(double mpg);
 
-	double Car::getRange();
+	double getRange();
 }; 
