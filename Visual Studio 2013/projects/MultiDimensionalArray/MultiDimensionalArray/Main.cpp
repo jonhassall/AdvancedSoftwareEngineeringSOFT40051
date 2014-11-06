@@ -10,7 +10,7 @@ using namespace std;
 int main()
 {
 	//Initialize random seed
-	srand(time(NULL));
+	srand( int(time(NULL)) );
 
 	int multiDimensional[3][5];
 
