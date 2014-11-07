@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.model" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<uml:Package xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xmi:id="_nS3pA2aGEeSo_JmEabYq4g" name="ATM System">
+  <eAnnotations xmi:id="_nS3pBGaGEeSo_JmEabYq4g" source="uml2.diagrams">
+    <contents xmi:type="umlnotation:UMLDiagram" xmi:id="_kav6cGaIEeSo_JmEabYq4g" type="Class" name="ClassDiagram ATM System">
+      <children xmi:type="umlnotation:UMLShape" xmi:id="_z9R0MGaIEeSo_JmEabYq4g" element="_5anRgGaGEeSo_JmEabYq4g" fontName="Segoe UI" fontHeight="8" transparency="0" lineColor="14263149" lineWidth="1" showStereotype="Label">
+        <children xmi:type="notation:DecorationNode" xmi:id="_z9TCUGaIEeSo_JmEabYq4g" type="ImageCompartment">
+          <layoutConstraint xmi:type="notation:Size" xmi:id="_z9TCUWaIEeSo_JmEabYq4g" width="1320" height="1320"/>
+        </children>
+        <children xmi:type="notation:BasicDecorationNode" xmi:id="_z9TCUmaIEeSo_JmEabYq4g" type="Stereotype"/>
+        <children xmi:type="notation:BasicDecorationNode" xmi:id="_z9TCU2aIEeSo_JmEabYq4g" type="Name"/>
+        <children xmi:type="notation:BasicDecorationNode" xmi:id="_z9TCVGaIEeSo_JmEabYq4g" type="Parent"/>
+        <children xmi:type="notation:SemanticListCompartment" xmi:id="_z9TpYGaIEeSo_JmEabYq4g" type="AttributeCompartment"/>
+        <children xmi:type="notation:SemanticListCompartment" xmi:id="_z9TpYWaIEeSo_JmEabYq4g" type="OperationCompartment"/>
+        <children xmi:type="notation:SemanticListCompartment" xmi:id="_z9TpYmaIEeSo_JmEabYq4g" visible="false" type="SignalCompartment"/>
+        <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_z9TpY2aIEeSo_JmEabYq4g" visible="false" type="StructureCompartment"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_z9R0MWaIEeSo_JmEabYq4g" x="3828" y="2376"/>
+      </children>
+      <children xmi:type="umlnotation:UMLShape" xmi:id="_gsLhgGaJEeSo_JmEabYq4g" element="_Bumg8GaHEeSo_JmEabYq4g" fontName="Segoe UI" fontHeight="8" transparency="0" lineColor="14263149" lineWidth="1" showStereotype="Label">
+        <children xmi:type="notation:DecorationNode" xmi:id="_gsLhgmaJEeSo_JmEabYq4g" type="ImageCompartment">
+          <layoutConstraint xmi:type="notation:Size" xmi:id="_gsLhg2aJEeSo_JmEabYq4g" width="1320" height="1320"/>
+        </children>
+        <children xmi:type="notation:BasicDecorationNode" xmi:id="_gsMIkGaJEeSo_JmEabYq4g" type="Stereotype"/>
+        <children xmi:type="notation:BasicDecorationNode" xmi:id="_gsMIkWaJEeSo_JmEabYq4g" type="Name"/>
+        <children xmi:type="notation:BasicDecorationNode" xmi:id="_gsMIkmaJEeSo_JmEabYq4g" type="Parent"/>
+        <children xmi:type="notation:SemanticListCompartment" xmi:id="_gsMIk2aJEeSo_JmEabYq4g" type="AttributeCompartment"/>
+        <children xmi:type="notation:SemanticListCompartment" xmi:id="_gsMIlGaJEeSo_JmEabYq4g" type="OperationCompartment"/>
+        <children xmi:type="notation:SemanticListCompartment" xmi:id="_gsMIlWaJEeSo_JmEabYq4g" visible="false" type="SignalCompartment"/>
+        <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_gsMIlmaJEeSo_JmEabYq4g" visible="false" type="StructureCompartment"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gsLhgWaJEeSo_JmEabYq4g" x="6932" y="8043"/>
+      </children>
+      <children xmi:type="umlnotation:UMLShape" xmi:id="_hB4rwGaJEeSo_JmEabYq4g" element="_ARu6UGaHEeSo_JmEabYq4g" fontName="Segoe UI" fontHeight="8" transparency="0" lineColor="14263149" lineWidth="1" showStereotype="Label">
+        <children xmi:type="notation:DecorationNode" xmi:id="_hB5S0GaJEeSo_JmEabYq4g" type="ImageCompartment">
+          <layoutConstraint xmi:type="notation:Size" xmi:id="_hB5S0WaJEeSo_JmEabYq4g" width="1320" height="1320"/>
+        </children>
+        <children xmi:type="notation:BasicDecorationNode" xmi:id="_hB5S0maJEeSo_JmEabYq4g" type="Stereotype"/>
+        <children xmi:type="notation:BasicDecorationNode" xmi:id="_hB5S02aJEeSo_JmEabYq4g" type="Name"/>
+        <children xmi:type="notation:BasicDecorationNode" xmi:id="_hB5S1GaJEeSo_JmEabYq4g" type="Parent"/>
+        <children xmi:type="notation:SemanticListCompartment" xmi:id="_hB5S1WaJEeSo_JmEabYq4g" type="AttributeCompartment"/>
+        <children xmi:type="notation:SemanticListCompartment" xmi:id="_hB554GaJEeSo_JmEabYq4g" type="OperationCompartment"/>
+        <children xmi:type="notation:SemanticListCompartment" xmi:id="_hB554WaJEeSo_JmEabYq4g" visible="false" type="SignalCompartment"/>
+        <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_hB554maJEeSo_JmEabYq4g" visible="false" type="StructureCompartment"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hB4rwWaJEeSo_JmEabYq4g" x="5979" y="11641"/>
+      </children>
+      <children xmi:type="umlnotation:UMLShape" xmi:id="_hWitIGaJEeSo_JmEabYq4g" element="_avi14GaHEeSo_JmEabYq4g" fontName="Segoe UI" fontHeight="8" transparency="0" lineColor="14263149" lineWidth="1" showStereotype="Label">
+        <children xmi:type="notation:DecorationNode" xmi:id="_hWjUMGaJEeSo_JmEabYq4g" type="ImageCompartment">
+          <layoutConstraint xmi:type="notation:Size" xmi:id="_hWjUMWaJEeSo_JmEabYq4g" width="1320" height="1320"/>
+        </children>
+        <children xmi:type="notation:BasicDecorationNode" xmi:id="_hWjUMmaJEeSo_JmEabYq4g" type="Stereotype"/>
+        <children xmi:type="notation:BasicDecorationNode" xmi:id="_hWjUM2aJEeSo_JmEabYq4g" type="Name"/>
+        <children xmi:type="notation:BasicDecorationNode" xmi:id="_hWjUNGaJEeSo_JmEabYq4g" type="Parent"/>
+        <children xmi:type="notation:SemanticListCompartment" xmi:id="_hWjUNWaJEeSo_JmEabYq4g" type="AttributeCompartment"/>
+        <children xmi:type="notation:SemanticListCompartment" xmi:id="_hWjUNmaJEeSo_JmEabYq4g" type="OperationCompartment"/>
+        <children xmi:type="notation:SemanticListCompartment" xmi:id="_hWj7QGaJEeSo_JmEabYq4g" visible="false" type="SignalCompartment"/>
+        <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_hWj7QWaJEeSo_JmEabYq4g" visible="false" type="StructureCompartment"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hWitIWaJEeSo_JmEabYq4g" x="16007" y="7699"/>
+      </children>
+      <element xsi:nil="true"/>
+    </contents>
+  </eAnnotations>
+  <packageImport xmi:id="_nS3pBWaGEeSo_JmEabYq4g">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_omMSEGaGEeSo_JmEabYq4g" name="Customer"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_5anRgGaGEeSo_JmEabYq4g" name="ATM">
+    <ownedOperation xmi:id="_SxNGUGaHEeSo_JmEabYq4g" name="displayEnterCard"/>
+    <ownedOperation xmi:id="_WUEJEGaHEeSo_JmEabYq4g" name="insertCard"/>
+    <ownedOperation xmi:id="_YmjwIGaHEeSo_JmEabYq4g" name="verifyCardType"/>
+    <ownedOperation xmi:id="_B5GO0GaJEeSo_JmEabYq4g" name="displayEnterPIN"/>
+    <ownedOperation xmi:id="_Gaum8GaJEeSo_JmEabYq4g" name="enterPIN"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_ARu6UGaHEeSo_JmEabYq4g" name="Consortium">
+    <ownedOperation xmi:id="_Rg9UgGaJEeSo_JmEabYq4g" name="verifyPINEntered"/>
+    <ownedOperation xmi:id="_XB2xQGaJEeSo_JmEabYq4g" name="verifyCardPIN"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Bumg8GaHEeSo_JmEabYq4g" name="Bank">
+    <ownedOperation xmi:id="_YpUeUGaJEeSo_JmEabYq4g" name="verifyCard"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_GaQ-0GaHEeSo_JmEabYq4g" name="Account">
+    <ownedOperation xmi:id="_dqt7oGaJEeSo_JmEabYq4g" name="verifyCard"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_I91HwGaHEeSo_JmEabYq4g" name="Cashcard"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_avi14GaHEeSo_JmEabYq4g" name="Transaction">
+    <ownedOperation xmi:id="_5ZzHQGaIEeSo_JmEabYq4g" name="createTransaction"/>
+    <ownedOperation xmi:id="_81_hUGaIEeSo_JmEabYq4g" name="addCardDetails"/>
+    <ownedOperation xmi:id="_PA5LgGaJEeSo_JmEabYq4g" name="logPINEntered"/>
+  </packagedElement>
+  <profileApplication xmi:id="_nS3pBmaGEeSo_JmEabYq4g">
+    <eAnnotations xmi:id="_nS3pB2aGEeSo_JmEabYq4g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+  </profileApplication>
+  <profileApplication xmi:id="_nS3pCGaGEeSo_JmEabYq4g">
+    <eAnnotations xmi:id="_nS3pCWaGEeSo_JmEabYq4g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default?"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML2_MSL_PROFILES/Default.epx#_a_S3wNWLEdiy4IqP8whjFA?Default?"/>
+  </profileApplication>
+  <profileApplication xmi:id="_nS3pCmaGEeSo_JmEabYq4g">
+    <eAnnotations xmi:id="_nS3pC2aGEeSo_JmEabYq4g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_IrdAUMmBEdqBcN1R6EvWUw?Deployment/Deployment?"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_vjbuwOvHEdiDX5bji0iVSA?Deployment?"/>
+  </profileApplication>
+</uml:Package>

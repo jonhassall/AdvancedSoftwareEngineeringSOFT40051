@@ -1,0 +1,40 @@
+!SESSION 2014-11-07 14:53:27.594 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=JRE 1.7.0 IBM J9 2.6 Windows 7 amd64-64 Compressed References 20121024_126071 (JIT enabled, AOT enabled)
+J9VM - R26_Java726_SR3_20121024_1635_B126071
+JIT  - r11.b02_20120924_26343a
+GC   - R26_Java726_SR3_20121024_1635_B126071_CMPRSS
+J9CL - 20121024_126071
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Framework arguments:  -product com.ibm.rational.rsa.product.v80.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ibm.rational.rsa.product.v80.ide
+
+!ENTRY org.eclipse.ui 2 0 2014-11-07 14:53:35.818
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-11-07 14:53:35.818
+!MESSAGE Commands should really have a category: plug-in='com.ibm.xtools.modeler.ui.diagrams.statechart', id='com.ibm.xtools.modeler.ui.diagrams.statechart.moveLeft', categoryId='com.ibm.xtools.modeler.ui.diagrams.statechart.moveTransitiontools.modeler.ui.diagrams.statechart.moveTransition'
+
+!ENTRY org.eclipse.ui 4 4 2014-11-07 14:53:38.878
+!MESSAGE Unable to find Action Set: com.ibm.xtools.pluglets.ui.actionSet
+
+!ENTRY org.eclipse.ui.workbench 2 0 2014-11-07 14:58:53.311
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2014-11-07 14:58:53.311
+!MESSAGE Conflict for 'org.eclipse.ui.edit.undo':
+HandlerActivation(commandId=org.eclipse.ui.edit.undo,
+	handler=ActionHandler(org.eclipse.ui.operations.UndoActionHandler@61d34384),
+	expression=,sourcePriority=0)
+HandlerActivation(commandId=org.eclipse.ui.edit.undo,
+	handler=ActionHandler(org.eclipse.ui.operations.UndoActionHandler@c8b0d86),
+	expression=,sourcePriority=0)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2014-11-07 14:58:53.342
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2014-11-07 14:58:53.342
+!MESSAGE Conflict for 'org.eclipse.ui.edit.redo':
+HandlerActivation(commandId=org.eclipse.ui.edit.redo,
+	handler=ActionHandler(org.eclipse.ui.operations.RedoActionHandler@9b4ad7f8),
+	expression=,sourcePriority=0)
+HandlerActivation(commandId=org.eclipse.ui.edit.redo,
+	handler=ActionHandler(org.eclipse.ui.operations.RedoActionHandler@d2eff40e),
+	expression=,sourcePriority=0)
