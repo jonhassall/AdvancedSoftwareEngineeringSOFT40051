@@ -15,6 +15,8 @@ using namespace std;
 Monkey::Monkey()
 {
 	cout << "Monkey non-parameterised constructor called.\n";
+	//Set age default to 0
+	Monkey::setAge(0);
 }
 
 //Non-parameterised constructors of the base class are called by default
@@ -51,7 +53,7 @@ void Monkey::makeNoise()
 	cout << "Ooo Ahh Ahh\n";
 }
 
-//void Monkey::describeYourself()
-//{
-//	cout << "Monkey: describeYourself()\n";
-//}
+void Monkey::sayHelloTo(char* name)
+{
+	cout << "Monkey: sayHelloTo(" << name << ")\n";
+}

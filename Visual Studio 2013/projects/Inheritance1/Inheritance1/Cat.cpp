@@ -15,6 +15,8 @@ using namespace std;
 Cat::Cat()
 {
 	cout << "Cat non-parameterised constructor called.\n";
+	//Set age default to 0
+	Cat::setAge(0);
 }
 
 //Non-parameterised constructors of the base class are called by default
@@ -51,7 +53,7 @@ void Cat::makeNoise()
 	cout << "Meow\n";
 }
 
-void Cat::describeYourself()
+/*void Cat::sayHelloTo(char* name)
 {
-	cout << "Cat: describeYourself()\n";
-}
+	cout << "Cat: sayHelloTo(" << name << ")\n";
+}*/

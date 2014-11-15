@@ -22,5 +22,12 @@ class Animal
 		void showName();
 		void showAge();
 
-		virtual void describeYourself();
+		//Multiple functions can have the same name, with different parameters. They are automatically chosen based on parameter types (method overloading)
+		void display(char*);
+		void display(int);
+		void display(bool);
+
+		//Virtual keyword allows a method to be overwritten in a subclass
+		//Whenever a class has any virtual functions, it must also have a virtual destructor
+		virtual void sayHelloTo(char* name);
 };

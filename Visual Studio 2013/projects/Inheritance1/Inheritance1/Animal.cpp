@@ -14,6 +14,8 @@ using namespace std;
 Animal::Animal()
 {
 	cout << "Animal constructor called\n";
+	//Set age default to 0
+	Animal::setAge(0);
 }
 
 Animal::Animal(int inputAge)
@@ -52,7 +54,22 @@ void Animal::showAge()
 	cout << "My age is " << age << "\n";
 }
 
-void Animal::describeYourself()
+void Animal::sayHelloTo(char* name)
 {
-	cout << "Animal: describeYourself()\n";
+	cout << "Animal: sayHelloTo(" << name << ")\n";
+}
+
+void Animal::display(char* value)
+{
+	cout << "Displaying char: " << value << "\n";
+}
+
+void Animal::display(int value)
+{
+	cout << "Displaying int: " << value << "\n";
+}
+
+void Animal::display(bool value)
+{
+	cout << "Displaying bool: " << value << "\n";
 }

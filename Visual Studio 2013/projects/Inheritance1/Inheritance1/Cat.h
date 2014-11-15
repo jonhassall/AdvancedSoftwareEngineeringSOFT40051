@@ -16,5 +16,5 @@ public:
 	void antagonise();
 	void makeNoise();
 
-	void describeYourself();
+	//void sayHelloTo(char* name);
 };
