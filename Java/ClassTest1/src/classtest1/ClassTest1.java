@@ -22,6 +22,14 @@ public class ClassTest1 {
         
         System.out.println(myAnimal.getName());
         System.out.println(myAnimal2.getName());
+        
+        myAnimal.setAge(30);
+        myAnimal2.setAge(-10);
+        
+        System.out.println(Animal.getTheAnswerToLife());
+        Animal.anotherAnswerToLife = 123;
+        System.out.println(Animal.getTheOtherAnswerToLife());
+        
     }
     
 }
