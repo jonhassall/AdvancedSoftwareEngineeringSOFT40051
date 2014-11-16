@@ -19,6 +19,7 @@ public final class Animal {
     //Set to 'final' to prevent changes/great way to make a constant
     public static final double INTEREST_RATE = 4.9;
     
+    //Two constructors with different parameter signatures
     public Animal() {
 //        Animal("Default name");
         this("Default name");
