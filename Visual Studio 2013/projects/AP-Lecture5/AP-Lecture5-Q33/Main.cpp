@@ -3,6 +3,7 @@
 // Date: 17-11-2014
 // Name: Jonathan Hassall
 // Lecture 5 - Question 33
+// Change function to use pointers, not reference parameters
 
 #include <iostream>
 #include <iomanip>
@@ -12,15 +13,16 @@
 using namespace std;
 
 //Function prototype
-void computeCircle(float& a, float& c, float& r);
+void computeCircle(float* a, float* c, float* r);
 
 int main()
 {
 	float a;
 	float c;
-	float r = 5;
-
-	computeCircle(a, c, r);
+	float r;
+	r = 5;
+	
+	computeCircle(&a, &c, &r);
 	
 	cout << left << setw(15) << "Area: "
 		<< a << "\n"
@@ -28,16 +30,11 @@ int main()
 		<< c << endl;
 }
 
-void computeCircle(float& a, float& c, float& r)
+void computeCircle(float* a, float* c, float* r)
 {
 	//Area A=πr2
-	a = M_PI * pow(r, 2);
+	*a = M_PI * pow(*r, 2);
 
 	//Circumference C=2πr
-	c = 2 * M_PI * r;
+	*c = 2 * M_PI * *r;
 }
-
-/*struct COMPUTEDCIRCLE {
-	float a;
-	float c;
-};*/
