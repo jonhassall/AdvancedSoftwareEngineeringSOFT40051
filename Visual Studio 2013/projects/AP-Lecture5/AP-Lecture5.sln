@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AP-Lecture5-Q30", "AP-Lectu
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AP-Lecture5-Q31", "AP-Lecture5-Q31\AP-Lecture5-Q31.vcxproj", "{8180C323-FD15-47A8-9E71-33F57A6A2AED}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AP-Lecture5-Q33", "AP-Lecture5-Q33\AP-Lecture5-Q33.vcxproj", "{0CFFDB25-F2F6-4B00-A02F-8F18D28A2721}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -21,6 +23,10 @@ Global
 		{8180C323-FD15-47A8-9E71-33F57A6A2AED}.Debug|Win32.Build.0 = Debug|Win32
 		{8180C323-FD15-47A8-9E71-33F57A6A2AED}.Release|Win32.ActiveCfg = Release|Win32
 		{8180C323-FD15-47A8-9E71-33F57A6A2AED}.Release|Win32.Build.0 = Release|Win32
+		{0CFFDB25-F2F6-4B00-A02F-8F18D28A2721}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0CFFDB25-F2F6-4B00-A02F-8F18D28A2721}.Debug|Win32.Build.0 = Debug|Win32
+		{0CFFDB25-F2F6-4B00-A02F-8F18D28A2721}.Release|Win32.ActiveCfg = Release|Win32
+		{0CFFDB25-F2F6-4B00-A02F-8F18D28A2721}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
