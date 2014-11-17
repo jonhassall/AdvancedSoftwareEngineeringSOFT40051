@@ -1,8 +1,8 @@
 // File: main.cpp
 // Version: V1.0
-// Date: 31-10-14
+// Date: 17-11-14
 // Name: Jonathan Hassall
-// Lecture 4 - Car
+// Lecture 5 - Q30 - Alter make and owner to store as pointer to char
 // Implementation - Car.cpp
 
 #include <iostream>
@@ -21,13 +21,20 @@ Car::Car()
 Car::Car(char make[], int year, double petrol, double tankSize, double mpg, char owner[])
 {
 	cout << "Constructor Car(params) called" << "\n";
+	Car::changeOwner(owner); 
 	Car::setMake(make);
 	Car::setYear(year);
 	Car::setPetrol(petrol);
 	Car::setTankSize(tankSize);
 	Car::setMpg(mpg);
-	Car::changeOwner(owner);
 	Car::showGraphic();
+}
+
+Car::~Car()
+{
+	cout << "Destructor called.\n";
+	delete[] makePtr; //Use delete[] to delete an array, delete to delete a single address pointer
+	delete[] ownerPtr;
 }
 
 //Show an ASCII graphic from a text file
@@ -53,8 +60,12 @@ void Car::showGraphic()
 
 void Car::display()
 {
-	cout << "\nCar information\n" << left << setw(12) << "Make: " << make << "\n" << setw(12) << "Year: " << year << "\n"
-		<< setw(12) << "Owner: " << owner << "\n" << setw(12) << "Petrol: " << petrol << "\n" << setw(12) << "Tank size: " << tankSize << "\n"
+	cout << "\nCar information\n" << left << setw(12) << "Make: ";
+	displayMake();
+	cout << "\n" << setw(12) << "Year: " << year << "\n"
+		<< setw(12) << "Owner: ";
+	displayOwner();
+	cout << "\n" << setw(12) << "Petrol: " << petrol << "\n" << setw(12) << "Tank size: " << tankSize << "\n"
 		<< setw(12) << "MPG: " << mpg << "\n"
 		<< setw(12) << "Range: " << getRange() << " miles\n";
 }
@@ -136,12 +147,30 @@ double Car::drive(double distance)
 
 void Car::changeOwner(char owner[])
 {
-	Car::owner = owner;
+	ownerPtr = new char[strlen(owner)+1];
+	strcpy_s(ownerPtr, strlen(owner) + 1, owner); //Remember to add one for \0 at end
+}
+
+void Car::displayOwner()
+{
+	for (int i = 0; ownerPtr[i] != '\0'; i++)
+	{
+		cout << ownerPtr[i];
+	}
 }
 
 void Car::setMake(char make[])
 {
-	Car::make = make;
+	makePtr = new char[strlen(make)+1];
+	strcpy_s(makePtr, strlen(make) + 1, make);
+}
+
+void Car::displayMake()
+{
+	for (int i = 0; makePtr[i] != '\0'; i++)
+	{
+		cout << makePtr[i];
+	}
 }
 
 void Car::setYear(int year)

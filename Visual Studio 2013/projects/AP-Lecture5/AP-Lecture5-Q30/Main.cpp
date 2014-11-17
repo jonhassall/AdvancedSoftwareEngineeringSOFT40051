@@ -1,8 +1,8 @@
 // File: main.cpp
 // Version: V1.0
-// Date: 31-10-14
+// Date: 17-11-14
 // Name: Jonathan Hassall
-// Lecture 4 - Car
+// Lecture 5 - Q30 - Alter make and owner to store as pointer to char
 
 #include <iostream>
 #include <string>
@@ -21,7 +21,7 @@ int main()
 	myCar.setMpg(38);
 
 	myCar.display();
-
+	
 	char input;
 	int input_int;
 
