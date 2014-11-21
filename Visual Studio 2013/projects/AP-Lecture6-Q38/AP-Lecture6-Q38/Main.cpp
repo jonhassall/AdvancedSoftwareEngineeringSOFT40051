@@ -46,15 +46,38 @@ int main()
 	myCar.display();
 
 
-	Car myCarsArray[2];
+	//You can declare an array of pointers, with the base class type
+	//You can then use a derived type with new
+	//Make sure to use -> operator on methods/property setting
+	Car* carsPtr[3];
+	carsPtr[0] = new FamilyCar;
+	carsPtr[0]->changeOwner("Susan");
+	carsPtr[0]->setMake("Suzuki");
+	carsPtr[0]->setYear(2009);
+	carsPtr[0]->setPetrol(12);
+	carsPtr[0]->setTankSize(11);
+	carsPtr[0]->setMpg(25);
+	carsPtr[0]->display();
 
-	myCarsArray[0];
+	carsPtr[1] = new Car;
+	carsPtr[1]->changeOwner("Jonathan");
+	carsPtr[1]->setMake("Ford");
+	carsPtr[1]->setYear(2001);
+	carsPtr[1]->setPetrol(3);
+	carsPtr[1]->setTankSize(8.79877);
+	carsPtr[1]->setMpg(38);
+	carsPtr[1]->display();
 
-	//Car myCar2 = myCar;
-	//myCar2.changeOwner("David");
+	carsPtr[2] = new TurboCar;
+	carsPtr[2]->changeOwner("Dave");
+	carsPtr[2]->setMake("Porsche");
+	carsPtr[2]->setYear(2012);
+	carsPtr[2]->setPetrol(5);
+	carsPtr[2]->setTankSize(6);
+	carsPtr[2]->setMpg(12);
+	carsPtr[2]->display();
 
-	//
-	//myCar2.display();
+
 	
 	char input;
 	int input_int;

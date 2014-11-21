@@ -46,7 +46,7 @@ void Animal::makeNoise()
 
 void Animal::showName()
 {
-	cout << "My name is " << name << "\n";
+	cout << "My name is " << name << " (called from Animal)\n";
 }
 
 void Animal::showAge()

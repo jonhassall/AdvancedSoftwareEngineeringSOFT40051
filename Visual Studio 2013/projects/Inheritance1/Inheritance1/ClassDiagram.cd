@@ -1,10 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="Animal" Collapsed="true">
-    <Position X="0.5" Y="0.5" Width="1.5" />
+  <Class Name="Animal">
+    <Position X="3.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAEAAABQACAAAAAAAgIAAEEAABEIAAAAAAAAAA=</HashCode>
       <FileName>Animal.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cat">
+    <Position X="1.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAACAAAACAgAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Cat.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Monkey">
+    <Position X="5.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQACAAAACAggAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Monkey.h</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

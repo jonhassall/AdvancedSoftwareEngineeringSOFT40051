@@ -14,17 +14,6 @@
 
 using namespace std;
 
-/*
-TODO:
-Change char* (char pointers) to strings
-
-DONE:
-Investigate virtual keyword
-Array of classes
-Tuple of classes
-Vector of classes
-*/
-
 int main()
 {
 	Animal myAnimal = Animal();
@@ -103,4 +92,20 @@ int main()
 	{
 		vectorMonkeys[i].showName();
 	}
+
+	//Array of pointers with same base class type
+	//Remember to use -> on operators/methods/properties
+	Animal * animalsList[3];
+	animalsList[0] = new Monkey();
+	animalsList[0]->setName("Array monkey");
+	animalsList[1] = new Cat();
+	animalsList[1]->setName("Array cat");
+	animalsList[2] = new Animal();
+	animalsList[2]->setName("Array animal");
+
+	for (int i = 0; i < 2; i++)
+	{
+		animalsList[i]->showName();
+	}
+
 }
