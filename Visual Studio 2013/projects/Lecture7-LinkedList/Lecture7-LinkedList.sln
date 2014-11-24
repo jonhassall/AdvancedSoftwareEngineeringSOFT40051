@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Lecture7-Q43", "Lecture7-Q43\Lecture7-Q43.vcxproj", "{2231B3F5-DA58-40DC-AD5D-68500B7E3F9C}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Lecture7-Q43-Stack", "Lecture7-Q43\Lecture7-Q43.vcxproj", "{2231B3F5-DA58-40DC-AD5D-68500B7E3F9C}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Lecture7-Q46-Queue", "Lecture7-Q46-Queue\Lecture7-Q46-Queue.vcxproj", "{0F297714-9487-42CF-9DC6-03B2D9444CF1}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Lecture7-DoublyLinked", "Lecture7-DoublyLinked\Lecture7-DoublyLinked.vcxproj", "{D87D7DDE-E487-4B54-BCA9-898C72FF943B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{0F297714-9487-42CF-9DC6-03B2D9444CF1}.Debug|Win32.Build.0 = Debug|Win32
 		{0F297714-9487-42CF-9DC6-03B2D9444CF1}.Release|Win32.ActiveCfg = Release|Win32
 		{0F297714-9487-42CF-9DC6-03B2D9444CF1}.Release|Win32.Build.0 = Release|Win32
+		{D87D7DDE-E487-4B54-BCA9-898C72FF943B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D87D7DDE-E487-4B54-BCA9-898C72FF943B}.Debug|Win32.Build.0 = Debug|Win32
+		{D87D7DDE-E487-4B54-BCA9-898C72FF943B}.Release|Win32.ActiveCfg = Release|Win32
+		{D87D7DDE-E487-4B54-BCA9-898C72FF943B}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,5 +1,5 @@
 // Version: V1.0
-// Date: 14-11-14
+// Date: 23-11-14
 // Name: Jonathan Hassall
 
 #if !defined(LIST_h_INCLUDED)
@@ -15,11 +15,17 @@ private:
 public:
 	List();
 	~List();
-	int add(int x);
+	int push(int x);
 	void display();
-	int get();
-	int remove(int value);
+	int removeByValue(int value);
+	int removeByIndex(int index);
 	int clear();
+	int pop();
+	int size();
+	int top();
+	
+	bool isEmpty();
+
 };
 
 #endif

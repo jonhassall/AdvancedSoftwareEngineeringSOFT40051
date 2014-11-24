@@ -9,11 +9,6 @@
 
 using namespace std;
 
-//TODO:
-//Delete specific entry
-//Find linked list size
-//Tidy up
-
 int main()
 {
 	List list;
@@ -29,16 +24,24 @@ int main()
 	// Should output 5, 4, 3, 2, 1 
 	// in this example.
 	cout << endl;
+	cout << "Size: " << list.size() << "\n";
+	cout << "Dequeue: " << list.dequeue() << "\n";
 
-	/*
+	list.display();
+	cout << endl;
+	cout << "Size: " << list.size() << "\n";
+	cout << "Front: " << list.front() << "\n";
+
+	list.display();
+
 	int removeInput;
 
-	cout << "Enter a value to remove:\n";
+	cout << "\nEnter a value to remove:\n";
 	cin >> removeInput;
 
 	// Should output 5, 4, 2, 1 
 	// in this example.
-	if (list.remove(removeInput) == 1)
+	if (list.removeByValue(removeInput) == 1)
 	{
 		cout << "Value has been removed.\n";
 	}
@@ -46,10 +49,12 @@ int main()
 	{
 		cout << "Value was not found.\n";
 	}
-
-	list.display();
-
+	
 	cout << endl;
-	*/
+	cout << "Size: " << list.size() << "\n";
+	cout << "Front: " << list.front() << "\n";
+	list.display();
+	cout << endl;
+
 	return 0;
 }

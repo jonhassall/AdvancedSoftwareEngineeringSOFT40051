@@ -17,14 +17,18 @@ public:
 	List();
 	~List();
 	
-	void enqueue(int x);
-	void dequeue();
-	int getSize();
+	bool enqueue(int x);
+	int dequeue();
+	int front();
+	int size();
 
 	void display();
-	int get();
-	int remove(int value);
+	bool removeByValue(int value);
 	int clear();
+
+	
+
+	bool isEmpty();
 };
 
 #endif

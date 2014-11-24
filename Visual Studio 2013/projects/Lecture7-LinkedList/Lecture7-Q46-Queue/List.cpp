@@ -38,8 +38,44 @@ void List::display()
 
 }
 
+
+bool List::removeByValue(int value)
+{
+	Link* temp;
+	Link* current;
+	if (List::isEmpty() == true)
+		//if (head == 0)	// check for empty list 
+		//Nothing to do
+	{
+		return 0;
+	}
+
+	// Same as inside loop in clear function
+	if (head->x == value)	// check first object
+	{ // Remove 1st element
+		temp = head;	// Point to one to remove 
+		head = head->next;    	// Point head second object 
+		delete temp;		// Free the memory
+		// Again delete must come after temp has been used (to provide the next link).
+		return 1;
+	}
+
+	// Check the rest of the list
+	for (current = head; current->next != 0; current = current->next)
+	{
+		if (current->next->x == value)
+		{ // Remove the object AFTER the one to which current points
+			temp = current->next;		// Point to one to remove
+			current->next = temp->next;	// Make link to one after 
+			delete temp;			// Free the memory
+			return 1;
+		}
+	}
+	return 0;		// Return value indicates whether successful
+}
+
 //Insert value at rear of the queue
-void List::enqueue(int x)
+bool List::enqueue(int x)
 {
 	Link *temp;
 	temp = new Link(x);
@@ -56,64 +92,90 @@ void List::enqueue(int x)
 	}
 
 	tail = temp;
+
+	return true;
 }
 
 //Remove value from front of the queue, and return it
 //Error if queue empty
-void List::dequeue()
+int List::dequeue()
 {
 	Link *temp;
 
-	if (head == 0)
+	int tempX;
+
+	if (isEmpty())
 	{
-		cout << "Queue is empty.\n";
+		//Queue is empty
+		return 0;
 	}
 	else
 	{
 		temp = head;
 		head = head->next;
-		cout << "The data dequeued is " << temp->x;
+		tempX = temp->x;
 		delete temp;
 	}
+
+	return tempX;
 }
 
-int List::getSize()
+
+//Get the size of the list
+int List::size()
 {
-	return 1;
-}
+	int counter = 0;
 
-int List::remove(int value)
-{
-	Link* temp;
-	Link* current;
-	if (head == 0)	// check for empty list 
-	//Nothing to do
+	Link *cursor;
+	cursor = head;
+	if (head == 0)
 	{
-		return 0;
+		return counter;
 	}
-
-	// Same as inside loop in clear function
-	if (head->x == value)	// check first object
-	{ // Remove 1st element
-		temp = head;	// Point to one to remove 
-		head = head->prev;    	// Point head second object 
-		delete temp;		// Free the memory
-		// Again delete must come after temp has been used (to provide the prev link).
-		return 1;
-	}
-
-	// Check the rest of the list
-	for (current = head; current->prev != 0; current = current->prev)
+	else
 	{
-		if (current->prev->x == value)
-		{ // Remove the object AFTER the one to which current points
-			temp = current->prev;		// Point to one to remove
-			current->prev = temp->prev;	// Make link to one after 
-			delete temp;			// Free the memory
-			return 1;
+		while (cursor != 0)
+		{
+			cursor = cursor->next;
+			counter++;
 		}
 	}
-	return 0;		// Return value indicates whether successful
+
+	return counter;
+}
+
+//Get, but don't remove, the value of the item at the front of the queue
+int List::front()
+{
+	Link *temp;
+
+	int tempX;
+
+	if (isEmpty())
+	{
+		//Queue is empty
+		return 0;
+	}
+	else
+	{
+		temp = head;
+		tempX = temp->x;
+	}
+
+	return tempX;
+}
+
+//Returns true if stack is empty
+bool List::isEmpty()
+{
+	if (head == 0)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
 }
 
 int List::clear() //Clear all objects from the list
@@ -124,9 +186,12 @@ int List::clear() //Clear all objects from the list
 	{
 		//Remove first element
 		temp = head;
-		head = head->prev;
+		head = head->next;
 		delete temp;
 	}
+
+	head = 0;
+	tail = 0;
 
 	return 1;
 }

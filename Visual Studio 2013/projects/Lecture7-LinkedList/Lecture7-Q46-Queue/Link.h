@@ -12,7 +12,6 @@ class Link
 private:
 	int x;	//Object stored
 	Link* next;	//Pointer to next object
-	Link* prev; //Pointer to previous object
 
 public:
 	Link(int);
