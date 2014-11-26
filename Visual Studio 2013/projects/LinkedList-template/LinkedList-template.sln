@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinkedList-template", "LinkedList-template\LinkedList-template.vcxproj", "{E08E451C-3920-45CE-891E-2D6FFB963225}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E08E451C-3920-45CE-891E-2D6FFB963225}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E08E451C-3920-45CE-891E-2D6FFB963225}.Debug|Win32.Build.0 = Debug|Win32
+		{E08E451C-3920-45CE-891E-2D6FFB963225}.Release|Win32.ActiveCfg = Release|Win32
+		{E08E451C-3920-45CE-891E-2D6FFB963225}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
