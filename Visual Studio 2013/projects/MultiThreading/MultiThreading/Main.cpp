@@ -18,18 +18,18 @@
 
 using namespace std;
 
-#define NUM_THREADS     10
+#define NUM_THREADS     25
 
 CRITICAL_SECTION critical;
 
 double caffeineLevel = 0;
-double caffeineWarningLevel = 60;
+double caffeineWarningLevel = 90;
 
 void drinkCoffee(double cupsToDrink, long millisecondsToPause)
 {
 	boolean end = false;
 
-	while (end == false)
+	while (!end)
 	{
 		cout << "This thread (" << GetCurrentThreadId() << ") is pausing for " << millisecondsToPause << " milliseconds\n";
 		std::this_thread::sleep_for(std::chrono::milliseconds(millisecondsToPause));
@@ -55,28 +55,30 @@ int main(int argc, char *argv[])
 {
 	InitializeCriticalSection(&critical);
 
-	//Constructs the new thread and runs it. Does not block execution
-	//thread threadArray[NUM_THREADS];
-
-	// Pointer 'temp' used to instantiate objects to add to list 
-	/*thread *threadPtrs[NUM_THREADS];
+	thread** threads;
+	threads = new thread*[NUM_THREADS];
 
 	for (int i = 0; i < NUM_THREADS; i++)
 	{
-		*threadPtrs[i] = new thread(drinkCoffee, 1, 250);
-	}*/
-
-	// Memory allocated and the object is given a value
-	//threadPtr = new thread(drinkCoffee, 1, 250);
-
-	/*
-	for (int i = 0; i < NUM_THREADS; i++)
-	{
-		thread threadArray[i](drinkCoffee, 1, 200);
+		//Constructs the new thread and runs it. Does not block execution
+		threads[i] = new thread(drinkCoffee, 1, 250);
 	}
-	*/
 
-	thread thread1(drinkCoffee, 1, 250);
+	for (int i = 0; i < NUM_THREADS; i++)
+	{
+		threads[i]->join();
+	}
+
+	for (int i = 0; i < NUM_THREADS; i++)
+	{
+		delete(threads[i]);
+	}
+
+	delete[] threads;
+
+	DeleteCriticalSection(&critical);
+
+	/*thread thread1(drinkCoffee, 1, 250);
 	thread thread2(drinkCoffee, 1, 500);
 	thread thread3(drinkCoffee, 1, 750);
 	thread thread4(drinkCoffee, 1, 250);
@@ -85,7 +87,7 @@ int main(int argc, char *argv[])
 	thread thread7(drinkCoffee, 1, 250);
 	thread thread8(drinkCoffee, 1, 500);
 	thread thread9(drinkCoffee, 1, 750);
-	thread thread10(drinkCoffee, 1, 250);
+	thread thread10(drinkCoffee, 1, 250);*/
 
 	//Makes the main thread wait for the new thread to finish execution, therefore blocks its own execution
 
@@ -96,7 +98,7 @@ int main(int argc, char *argv[])
 
 	//threadPtr->join();
 
-	thread1.join();
+	/*thread1.join();
 	thread2.join();
 	thread3.join();
 	thread4.join();
@@ -105,7 +107,7 @@ int main(int argc, char *argv[])
 	thread7.join();
 	thread8.join();
 	thread9.join();
-	thread10.join();
+	thread10.join();*/
 
-	DeleteCriticalSection(&critical);
+	
 }
