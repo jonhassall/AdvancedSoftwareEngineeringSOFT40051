@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MultiPaint", "MultiPaint\MultiPaint.vcxproj", "{6CCCFEA1-B67F-4593-B316-04E24D7C4A93}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MultiText", "MultiText\MultiText.vcxproj", "{BDF9CC7A-1DEF-4EB0-A86E-6E89FAC57035}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MultiPaintSem", "MultiPaintSem\MultiPaintSem.vcxproj", "{EDD6A6D6-85F4-4AEA-9003-69061B76385C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MultiTextSem", "MultiTextSem\MultiTextSem.vcxproj", "{20087B2F-CF0E-41E3-BA0B-E83D0F292F5D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6CCCFEA1-B67F-4593-B316-04E24D7C4A93}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6CCCFEA1-B67F-4593-B316-04E24D7C4A93}.Debug|Win32.Build.0 = Debug|Win32
+		{6CCCFEA1-B67F-4593-B316-04E24D7C4A93}.Release|Win32.ActiveCfg = Release|Win32
+		{6CCCFEA1-B67F-4593-B316-04E24D7C4A93}.Release|Win32.Build.0 = Release|Win32
+		{BDF9CC7A-1DEF-4EB0-A86E-6E89FAC57035}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BDF9CC7A-1DEF-4EB0-A86E-6E89FAC57035}.Debug|Win32.Build.0 = Debug|Win32
+		{BDF9CC7A-1DEF-4EB0-A86E-6E89FAC57035}.Release|Win32.ActiveCfg = Release|Win32
+		{BDF9CC7A-1DEF-4EB0-A86E-6E89FAC57035}.Release|Win32.Build.0 = Release|Win32
+		{EDD6A6D6-85F4-4AEA-9003-69061B76385C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EDD6A6D6-85F4-4AEA-9003-69061B76385C}.Debug|Win32.Build.0 = Debug|Win32
+		{EDD6A6D6-85F4-4AEA-9003-69061B76385C}.Release|Win32.ActiveCfg = Release|Win32
+		{EDD6A6D6-85F4-4AEA-9003-69061B76385C}.Release|Win32.Build.0 = Release|Win32
+		{20087B2F-CF0E-41E3-BA0B-E83D0F292F5D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{20087B2F-CF0E-41E3-BA0B-E83D0F292F5D}.Debug|Win32.Build.0 = Debug|Win32
+		{20087B2F-CF0E-41E3-BA0B-E83D0F292F5D}.Release|Win32.ActiveCfg = Release|Win32
+		{20087B2F-CF0E-41E3-BA0B-E83D0F292F5D}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
